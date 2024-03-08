@@ -3,9 +3,9 @@ $sname = "databasetargetlifter.mysql.database.azure.com";
 $uname = "databasetargetlifter";
 $password = "xN]3PxKgeT9,^NuxN]3PxKgeT9,^Nu";
 
-$db_name = "databasetargetlifter";
+$db_name = "targetlifter00";
 
-// Create a connection
+// Established a connection
 $conn = new mysqli($sname, $uname, $password, $db_name);
 
 // Check the connection
