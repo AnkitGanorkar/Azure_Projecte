@@ -1,10 +1,10 @@
 <?php
-// Establishing a connection
-$mydb = mysqli_connect(
-  "databasetargetlifter.mysql.database.azure.com",
-  "databasetargetlifter",
-  "xN]3PxKgeT9,^NuxN]3PxKgeT9,^Nu",
-  "databasetargetlifter"
+// Established a connection
+$mydb = mysql.connector.connect(
+  host="databasetargetlifter.mysql.database.azure.com",
+  user="databasetargetlifter",
+  password="xN]3PxKgeT9,^NuxN]3PxKgeT9,^Nu",
+  database="databasetargetlifter"
 );
 
 // Check connection
