@@ -28,9 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         
-        echo "<script>alert('Data inserted successfully'); window.location='index.html'</script>";
+    echo "Data inserted successfully";
     } else {
-        echo "<script>alert('Data inserted successfully'); window.location='index.html'</script>";
+        echo "'Data inserted successfully'";
 
        // echo "" ;
     }
