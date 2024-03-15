@@ -8,31 +8,31 @@ $db_name = "databasetargetlifter";
 $conn = new mysqli($sname, $uname, $password, $db_name);
 
 // Check connection
-if (!$mydb) {
-    die("Connection failed: " . mysqli_connect_error());
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
 // Assuming you have form data to insert
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $name = $_POST["name"];
-    $lname = $_POST["lname"];
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
-    $company = $_POST["company"];
-    $website = $_POST["website"];
-    $message = $_POST["message"];
+    // Sanitize input data
+    $name = mysqli_real_escape_string($conn, $_POST["name"]);
+    $lname = mysqli_real_escape_string($conn, $_POST["lname"]);
+    $email = mysqli_real_escape_string($conn, $_POST["email"]);
+    $phone = mysqli_real_escape_string($conn, $_POST["phone"]);
+    $company = mysqli_real_escape_string($conn, $_POST["company"]);
+    $website = mysqli_real_escape_string($conn, $_POST["website"]);
+    $message = mysqli_real_escape_string($conn, $_POST["message"]);
 
     // Prepare and execute the SQL statement
     $sql = "INSERT INTO proposal (name, lname, email, phone, company, website, message) VALUES ('$name', '$lname', '$email', '$phone', '$company', '$website', '$message')";
 
-    if (mysqli_query($conn, $sql)) {
+    if ($conn->query($sql) === TRUE) {
         echo "Data inserted successfully";
     } else {
-        echo "Data inserted successfully: " . mysqli_error($conn);
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
 }
 
 // Close the connection
-mysqli_close($conn);
+$conn->close();
 ?>
