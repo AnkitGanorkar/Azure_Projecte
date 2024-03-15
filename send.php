@@ -5,8 +5,8 @@ mydb = mysql.connector.connect(
   user="databasetargetlifter",
   password="xN]3PxKgeT9,^NuxN]3PxKgeT9,^Nu",
   database="databasetargetlifter"
-
-
+  )
+  
 // Check the connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
