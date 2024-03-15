@@ -27,10 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO proposal (name, lname, email, phone, company, website, message) VALUES ('$name', '$lname', '$email', '$phone', '$company', '$website', '$message')";
 
     if ($conn->query($sql) === TRUE) {
-        
-    echo "Data inserted successfully";
+    echo "<script>alert('Data inserted successfully'); window.location='index.html'</script>";
     } else {
-        echo "'Data inserted successfully'";
+        echo "<script>alert('Data inserted successfully'); window.location='index.html'</script>";
 
        // echo "" ;
     }
