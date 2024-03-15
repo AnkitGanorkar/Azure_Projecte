@@ -30,6 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         echo "<script>alert('Data inserted successfully'); window.location='index.html'</script>";
     } else {
+        echo "<script>alert('Data inserted successfully'); window.location='index.html'</script>";
+
        // echo "" ;
     }
 }
