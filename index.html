@@ -44,7 +44,38 @@
     function myFunction(video) {
       video.style.display = 'none';
     }
+
+    //CHAT BOT
     </script>
+    <style>
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+      }
+      .iframe-container {
+        width: calc(100% - 150px); /* Adjust the width as needed */
+        float: left;
+        height: 100%;
+      }
+      .button-container {
+        width: 150px;
+        float: right;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+      }
+    </style>
   
 </head>
 
@@ -781,21 +812,18 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Search Media Automation (SMA)</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Subscribe</h4>
-            <p></p>
-            <form action="subscribe.php" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
+          
+          //CHAT BOT 
+          <div class="container">
+            <div class="iframe-container">
+              <iframe src="https://webchat.botframework.com/embed/chatbotankit-bot?s=fG8wIcJmgpw.Z8yowf3ZFXKW07gZUAWOv_LAa0j-w2QnSsMbZeCvwfw" style="height: 100%; width: 100%; border: none;"></iframe>
+            </div>
+            <div class="button-container">
+              <button class="button">Button</button>
+            </div>
           </div>
 
-         
-
-
-
-
+        
         </div>
       </div>
     </div>
