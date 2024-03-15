@@ -1,9 +1,10 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
- $sname = "databasetargetlifter.mysql.database.azure.com";
+$sname = "databasetargetlifter.mysql.database.azure.com";
 $uname = "databasetargetlifter";
 $password = "xN]3PxKgeT9,^NuxN]3PxKgeT9,^Nu";
 $db_name = "databasetargetlifter";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ 
     
     // Create a connection
      $conn = new mysqli($sname, $uname, $password, $db_name);

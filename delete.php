@@ -64,10 +64,10 @@
             <th></th>
         </tr>
         <?php
-        $sname = "localhost";
-        $uname = "root";
-        $password = "";
-        $db_name = "target-lifter";
+        $sname = "databasetargetlifter.mysql.database.azure.com";
+        $uname = "databasetargetlifter";
+        $password = "xN]3PxKgeT9,^NuxN]3PxKgeT9,^Nu";
+        $db_name = "databasetargetlifter";
 
         // Create a connection
         $conn = mysqli_connect($sname, $uname, $password, $db_name);
