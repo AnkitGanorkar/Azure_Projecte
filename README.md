@@ -9,7 +9,7 @@ The Target Lifters Digital Marketing Website project is an initiative undertaken
 
 ## Project Details :
 ### Project Demo URL : https://targetlifterwebapp.azurewebsites.net/
-### Demo Video URL : 
+### Demo Video URL : https://drive.google.com/file/d/1lR81JRBud6ARonJ9PUsr2vzFn4zKxjwt/view?usp=sharing
 ### Github Repository URL :https://github.com/AnkitGanorkar/Azure_Projecte
 ### Industry : Ed-tech
 
